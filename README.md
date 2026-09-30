@@ -1,4 +1,5 @@
 <p align="center"><img src="docs/flow.svg" alt="Animated Social Profile Intel pipeline: Username → Variants → Scan → Stream → Profile → Export" width="100%"/></p>
+
 <p align="center"><sub>10-second tour: Username → Variants → Scan → Stream → Profile → Export</sub></p>
 
 <p align="center"><img src="docs/mc/intro.svg" width="100%" alt="AI-powered OSINT tool. Enter a username: it searches 40+ platforms in parallel, generates 75+ variants and writes an AI profile with a local LLM."/></p>
