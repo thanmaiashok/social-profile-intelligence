@@ -24,48 +24,14 @@
 <a id="manual-setup"></a>
 <h2><img src="docs/px3/h2-manual-setup.svg" width="100%" alt="Manual Setup"/></h2>
 
-<p align="center"><img src="docs/px3/bar-bash.svg" width="100%" alt="bash code"/></p>
-
-```bash
-# 1. Install Ollama — https://ollama.com/download
-#    Then pull the model:
-ollama pull llama3.1:8b-instruct-q4_K_M
-
-# 2. Backend
-cd backend
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # macOS/Linux
-pip install -r requirements.txt
-
-# 3. Frontend
-cd ../frontend
-npm install
-
-# 4. Environment
-cp .env.example .env           # edit if needed
-```
+<p align="center"><img src="docs/px3/c-01.svg" width="100%" alt="code: # 1. Install Ollama — https://ollama.com/download # Then pull the model: ollama pull llama3.1:8b-instruct-q4_K_M # 2. Backend cd backend python -m venv venv ven"/></p>
 
 <a id="running"></a>
 <h2><img src="docs/px3/h2-running.svg" width="100%" alt="Running"/></h2>
 
 <p align="center"><img src="docs/px3/t-04.svg" width="100%" alt="Open 3 terminals:"/></p>
 
-<p align="center"><img src="docs/px3/bar-bash.svg" width="100%" alt="bash code"/></p>
-
-```bash
-# Terminal 1 — Ollama
-ollama serve
-
-# Terminal 2 — Backend
-cd backend
-venv\Scripts\activate
-uvicorn app.main:app --port 8000 --reload
-
-# Terminal 3 — Frontend
-cd frontend
-npm run dev
-```
+<p align="center"><img src="docs/px3/c-02.svg" width="100%" alt="code: # Terminal 1 — Ollama ollama serve # Terminal 2 — Backend cd backend venv\Scripts\activate uvicorn app.main:app --port 8000 --reload # Terminal 3 — Frontend cd "/></p>
 
 <p align="center"><img src="docs/px3/t-05.svg" width="100%" alt="Open http://localhost:5173"/></p>
 
@@ -77,72 +43,12 @@ npm run dev
 <a id="how-it-works"></a>
 <h2><img src="docs/px3/h2-how-it-works.svg" width="100%" alt="How It Works"/></h2>
 
-<p align="center"><img src="docs/px3/bar-code.svg" width="100%" alt="code code"/></p>
-
-```
-User enters username
-        │
-        ▼
-Backend generates 75+ variants
-(john → john_doe, johndoe, john.doe, johndoe99 ...)
-        │
-        ▼
-Async parallel HTTP checks across 40+ platforms
-(50 concurrent requests, 5s timeout each)
-        │
-        ▼
-Results streamed via WebSocket in real time
-        │
-        ▼
-Local Llama 3.1 8B analyzes found platforms
-→ generates psychological dossier (JSON)
-        │
-        ▼
-Frontend renders cards, filters, AI profile
-```
+<p align="center"><img src="docs/px3/c-03.svg" width="100%" alt="code: User enters username │ ▼ Backend generates 75+ variants (john → john_doe, johndoe, john.doe, johndoe99 ...) │ ▼ Async parallel HTTP checks across 40+ platforms "/></p>
 
 <a id="project-structure"></a>
 <h2><img src="docs/px3/h2-project-structure.svg" width="100%" alt="Project Structure"/></h2>
 
-<p align="center"><img src="docs/px3/bar-code.svg" width="100%" alt="code code"/></p>
-
-```
-social-profile-intelligence/
-├── backend/
-│   └── app/
-│       ├── main.py              # FastAPI entry point
-│       ├── config.py            # Env config
-│       ├── routes/
-│       │   └── search.py        # WebSocket + REST endpoints
-│       ├── services/
-│       │   ├── platform_checker.py   # Async HTTP profile checks
-│       │   ├── username_variants.py  # Variant generation
-│       │   ├── profiler.py           # LLM dossier generation
-│       │   └── result_aggregator.py  # Deduplication + scoring
-│       ├── llm/
-│       │   ├── llm_client.py    # Ollama API client
-│       │   └── prompt_templates.py
-│       └── core/
-│           └── platforms.py     # 40+ platform definitions
-├── frontend/
-│   └── src/
-│       ├── pages/Home.jsx       # Main page + all logic
-│       ├── components/
-│       │   ├── SearchBar.jsx
-│       │   ├── ProfileCard.jsx
-│       │   ├── Loader.jsx
-│       │   ├── TerminalLog.jsx
-│       │   └── NetworkBackground.jsx
-│       └── services/api.js
-├── docs/
-│   ├── api.md
-│   ├── architecture.md
-│   └── ethics.md
-├── .env.example
-├── .gitignore
-├── setup.bat                    # One-click Windows setup
-└── README.md
-```
+<p align="center"><img src="docs/px3/c-04.svg" width="100%" alt="code: social-profile-intelligence/ ├── backend/ │ └── app/ │ ├── main.py # FastAPI entry point │ ├── config.py # Env config │ ├── routes/ │ │ └── search.py # WebSocke"/></p>
 
 <a id="platform-categories"></a>
 <h2><img src="docs/px3/h2-platform-categories.svg" width="100%" alt="Platform Categories"/></h2>
