@@ -1,8 +1,11 @@
 # Social Profile Intelligence
 
+<p align="center"><img src="docs/flow.svg" alt="Animated Social Profile Intel pipeline: Username → Variants → Scan → Stream → Profile → Export" width="100%"/></p>
+<p align="center"><sub>10-second tour: Username → Variants → Scan → Stream → Profile → Export</sub></p>
+
 AI-powered OSINT tool. Enter a username — it searches 40+ platforms in parallel, generates 75+ username variants, and produces an AI psychological profile using a local LLM (no cloud, no API keys).
 
-![Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react) ![Stack](https://img.shields.io/badge/FastAPI-0.110-009688?logo=fastapi) ![Stack](https://img.shields.io/badge/Ollama-llama3.1-black?logo=ollama) ![Stack](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss) ![License](https://img.shields.io/badge/license-MIT-green) ![CI](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/social-profile-intelligence/ci.yml?label=CI)
+![Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react) ![Stack](https://img.shields.io/badge/FastAPI-0.110-009688?logo=fastapi) ![Stack](https://img.shields.io/badge/Ollama-llama3.1-black?logo=ollama) ![Stack](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss) ![License](https://img.shields.io/badge/license-MIT-green) ![CI](https://img.shields.io/github/actions/workflow/status/thanmaiashok/social-profile-intelligence/ci.yml?label=CI)
 
 ---
 
