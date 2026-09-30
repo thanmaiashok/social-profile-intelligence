@@ -24,10 +24,7 @@
 <a id="manual-setup"></a>
 <h2><img src="docs/px3/h2-manual-setup.svg" width="100%" alt="Manual Setup"/></h2>
 
-<p align="center"><img src="docs/px3/c-01.svg" width="100%" alt="code: # 1. Install Ollama — https://ollama.com/download # Then pull the model: ollama pull llama3.1:8b-instruct-q4_K_M # 2. Backend cd backend python -m venv venv ven"/></p>
-
-<details>
-<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
+<p align="center"><img src="docs/px3/bar-bash.svg" width="100%" alt="bash code"/></p>
 
 ```bash
 # 1. Install Ollama — https://ollama.com/download
@@ -49,17 +46,12 @@ npm install
 cp .env.example .env           # edit if needed
 ```
 
-</details>
-
 <a id="running"></a>
 <h2><img src="docs/px3/h2-running.svg" width="100%" alt="Running"/></h2>
 
 <p align="center"><img src="docs/px3/t-04.svg" width="100%" alt="Open 3 terminals:"/></p>
 
-<p align="center"><img src="docs/px3/c-02.svg" width="100%" alt="code: # Terminal 1 — Ollama ollama serve # Terminal 2 — Backend cd backend venv\Scripts\activate uvicorn app.main:app --port 8000 --reload # Terminal 3 — Frontend cd "/></p>
-
-<details>
-<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
+<p align="center"><img src="docs/px3/bar-bash.svg" width="100%" alt="bash code"/></p>
 
 ```bash
 # Terminal 1 — Ollama
@@ -75,8 +67,6 @@ cd frontend
 npm run dev
 ```
 
-</details>
-
 <p align="center"><img src="docs/px3/t-05.svg" width="100%" alt="Open http://localhost:5173"/></p>
 
 <a id="environment-variables"></a>
@@ -87,10 +77,7 @@ npm run dev
 <a id="how-it-works"></a>
 <h2><img src="docs/px3/h2-how-it-works.svg" width="100%" alt="How It Works"/></h2>
 
-<p align="center"><img src="docs/px3/c-03.svg" width="100%" alt="code: User enters username │ ▼ Backend generates 75+ variants (john → john_doe, johndoe, john.doe, johndoe99 ...) │ ▼ Async parallel HTTP checks across 40+ platforms "/></p>
-
-<details>
-<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
+<p align="center"><img src="docs/px3/bar-code.svg" width="100%" alt="code code"/></p>
 
 ```
 User enters username
@@ -114,15 +101,10 @@ Local Llama 3.1 8B analyzes found platforms
 Frontend renders cards, filters, AI profile
 ```
 
-</details>
-
 <a id="project-structure"></a>
 <h2><img src="docs/px3/h2-project-structure.svg" width="100%" alt="Project Structure"/></h2>
 
-<p align="center"><img src="docs/px3/c-04.svg" width="100%" alt="code: social-profile-intelligence/ ├── backend/ │ └── app/ │ ├── main.py # FastAPI entry point │ ├── config.py # Env config │ ├── routes/ │ │ └── search.py # WebSocke"/></p>
-
-<details>
-<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
+<p align="center"><img src="docs/px3/bar-code.svg" width="100%" alt="code code"/></p>
 
 ```
 social-profile-intelligence/
@@ -161,8 +143,6 @@ social-profile-intelligence/
 ├── setup.bat                    # One-click Windows setup
 └── README.md
 ```
-
-</details>
 
 <a id="platform-categories"></a>
 <h2><img src="docs/px3/h2-platform-categories.svg" width="100%" alt="Platform Categories"/></h2>
