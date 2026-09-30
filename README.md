@@ -1,15 +1,12 @@
-# Social Profile Intelligence
-
 <p align="center"><img src="docs/flow.svg" alt="Animated Social Profile Intel pipeline: Username → Variants → Scan → Stream → Profile → Export" width="100%"/></p>
 <p align="center"><sub>10-second tour: Username → Variants → Scan → Stream → Profile → Export</sub></p>
 
-AI-powered OSINT tool. Enter a username — it searches 40+ platforms in parallel, generates 75+ username variants, and produces an AI psychological profile using a local LLM (no cloud, no API keys).
+<p align="center"><img src="docs/mc/intro.svg" width="100%" alt="AI-powered OSINT tool. Enter a username: it searches 40+ platforms in parallel, generates 75+ variants and writes an AI profile with a local LLM."/></p>
 
-![Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react) ![Stack](https://img.shields.io/badge/FastAPI-0.110-009688?logo=fastapi) ![Stack](https://img.shields.io/badge/Ollama-llama3.1-black?logo=ollama) ![Stack](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss) ![License](https://img.shields.io/badge/license-MIT-green) ![CI](https://img.shields.io/github/actions/workflow/status/thanmaiashok/social-profile-intelligence/ci.yml?label=CI)
+<p align="center"><img src="docs/mc/features.svg" width="100%" alt="Key features"/></p>
 
----
-
-## Features
+<a id="features"></a>
+<h2><img src="docs/mc/h2-features.svg" width="100%" alt="Features"/></h2>
 
 - **40+ platforms** — Instagram, GitHub, Reddit, TikTok, Steam, Twitch, Spotify, LinkedIn, and more
 - **75+ username variants** — prefixes, suffixes, year patterns, separators auto-generated
@@ -21,9 +18,8 @@ AI-powered OSINT tool. Enter a username — it searches 40+ platforms in paralle
 - **Fully responsive** — mobile, tablet, desktop
 - **100% local** — no cloud LLM, no external AI API
 
----
-
-## Requirements
+<a id="requirements"></a>
+<h2><img src="docs/mc/h2-requirements.svg" width="100%" alt="Requirements"/></h2>
 
 | Tool | Version | Download |
 |------|---------|----------|
@@ -31,9 +27,8 @@ AI-powered OSINT tool. Enter a username — it searches 40+ platforms in paralle
 | Node.js | 18+ | https://nodejs.org |
 | Ollama | latest | https://ollama.com/download |
 
----
-
-## Quick Setup (Windows)
+<a id="quick-setup-windows"></a>
+<h2><img src="docs/mc/h2-quick-setup-windows.svg" width="100%" alt="Quick Setup (Windows)"/></h2>
 
 Double-click `setup.bat` at the project root. It will:
 
@@ -44,9 +39,8 @@ Double-click `setup.bat` at the project root. It will:
 5. Run `npm install` for the frontend
 6. Create `.env` from `.env.example` if not present
 
----
-
-## Manual Setup
+<a id="manual-setup"></a>
+<h2><img src="docs/mc/h2-manual-setup.svg" width="100%" alt="Manual Setup"/></h2>
 
 ```bash
 # 1. Install Ollama — https://ollama.com/download
@@ -68,9 +62,8 @@ npm install
 cp .env.example .env           # edit if needed
 ```
 
----
-
-## Running
+<a id="running"></a>
+<h2><img src="docs/mc/h2-running.svg" width="100%" alt="Running"/></h2>
 
 Open **3 terminals**:
 
@@ -90,9 +83,8 @@ npm run dev
 
 Open **http://localhost:5173**
 
----
-
-## Environment Variables
+<a id="environment-variables"></a>
+<h2><img src="docs/mc/h2-environment-variables.svg" width="100%" alt="Environment Variables"/></h2>
 
 | Variable | Default | Description |
 |----------|---------|-------------|
@@ -103,9 +95,8 @@ Open **http://localhost:5173**
 
 Copy `.env.example` to `.env` and adjust if your ports differ.
 
----
-
-## How It Works
+<a id="how-it-works"></a>
+<h2><img src="docs/mc/h2-how-it-works.svg" width="100%" alt="How It Works"/></h2>
 
 ```
 User enters username
@@ -129,9 +120,8 @@ Local Llama 3.1 8B analyzes found platforms
 Frontend renders cards, filters, AI profile
 ```
 
----
-
-## Project Structure
+<a id="project-structure"></a>
+<h2><img src="docs/mc/h2-project-structure.svg" width="100%" alt="Project Structure"/></h2>
 
 ```
 social-profile-intelligence/
@@ -171,9 +161,8 @@ social-profile-intelligence/
 └── README.md
 ```
 
----
-
-## Platform Categories
+<a id="platform-categories"></a>
+<h2><img src="docs/mc/h2-platform-categories.svg" width="100%" alt="Platform Categories"/></h2>
 
 | Category | Example Platforms |
 |----------|------------------|
@@ -184,9 +173,8 @@ social-profile-intelligence/
 | Professional | LinkedIn, SlideShare, ProductHunt |
 | Writing | Medium, Substack, Tumblr |
 
----
-
-## Ethics & Legal
+<a id="ethics--legal"></a>
+<h2><img src="docs/mc/h2-ethics-legal.svg" width="100%" alt="Ethics &amp; Legal"/></h2>
 
 - Searches **public data only** — no authentication bypass, no private data access
 - For **educational, research, and authorized OSINT** use only
@@ -196,12 +184,13 @@ social-profile-intelligence/
 
 See [`docs/ethics.md`](docs/ethics.md) for full policy.
 
----
-
-## Tech Stack
+<a id="tech-stack"></a>
+<h2><img src="docs/mc/h2-tech-stack.svg" width="100%" alt="Tech Stack"/></h2>
 
 **Frontend** — React 18, Vite, Tailwind CSS, Framer Motion, Axios, html2canvas, react-icons
 
 **Backend** — FastAPI, Uvicorn, httpx (async), Pydantic, python-dotenv
 
 **AI** — Ollama + Llama 3.1 8B Instruct (Q4_K_M quantization, runs fully local)
+
+<p align="center"><a href="https://github.com/thanmaiashok"><img src="docs/mc/footer.svg" width="100%" alt="Built by Thanmai A, founder of FoxynAI"/></a></p>
